@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="time_color">#ff5a00</color>
+    <color name="orange_salmon">#EC5745</color>
+    <color name="red_deep">#ea2226</color>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="black_deep">#FF000000</color>
+    <color name="bbbbbb_2.3" tools:ignore="MissingDefaultResource">#bbbbbb</color>
+    <color name="green_deep_color">#6fb30d</color>
+</resources>

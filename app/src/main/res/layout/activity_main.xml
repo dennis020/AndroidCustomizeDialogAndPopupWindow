@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/m_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_popup"
+        style="@style/btn_style_done"
+        android:layout_marginTop="100dp"
+        android:text="CommonPopupWindow" />
+
+    <TextView
+        android:id="@+id/tv_floating_window"
+        style="@style/btn_style_done"
+        android:layout_below="@+id/tv_popup"
+        android:layout_marginTop="30dp"
+        android:text="FloatingWindow" />
+
+    <TextView
+        android:id="@+id/tv_dialog"
+        style="@style/btn_style_done"
+        android:layout_below="@+id/tv_floating_window"
+        android:layout_marginTop="30dp"
+        android:text="CommonDialog" />
+</RelativeLayout>
