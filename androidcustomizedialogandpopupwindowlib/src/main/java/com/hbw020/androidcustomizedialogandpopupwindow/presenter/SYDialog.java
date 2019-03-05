@@ -277,7 +277,7 @@ public class SYDialog extends SYBaseDialog implements IDialog {
          * @param onclickListener IDialog.OnClickListener
          * @return Builder
          */
-        public Builder setPositiveButton(String btnStr, IDialog.OnClickListener onclickListener) {
+        public Builder setPositiveButton(CharSequence btnStr, IDialog.OnClickListener onclickListener) {
             params.positiveBtnListener = onclickListener;
             params.positiveStr = btnStr;
             params.showBtnRight = true;
@@ -301,7 +301,7 @@ public class SYDialog extends SYBaseDialog implements IDialog {
          * @param onclickListener IDialog.OnClickListener
          * @return Builder
          */
-        public Builder setNegativeButton(String btnStr, IDialog.OnClickListener onclickListener) {
+        public Builder setNegativeButton(CharSequence btnStr, IDialog.OnClickListener onclickListener) {
             params.negativeBtnListener = onclickListener;
             params.negativeStr = btnStr;
             params.showBtnLeft = true;
@@ -314,7 +314,7 @@ public class SYDialog extends SYBaseDialog implements IDialog {
          * @param title 标题
          * @return Builder
          */
-        public Builder setTitle(String title) {
+        public Builder setTitle(CharSequence title) {
             params.titleStr = title;
             return this;
         }
@@ -325,7 +325,7 @@ public class SYDialog extends SYBaseDialog implements IDialog {
          * @param content 内容
          * @return Builder
          */
-        public Builder setContent(String content) {
+        public Builder setContent(CharSequence content) {
             params.contentStr = content;
             return this;
         }

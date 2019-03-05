@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -51,7 +52,8 @@ public class CommonDialogActivity extends BaseActivity {
      */
     public void showDefaultDialog(View view) {
 
-        DialogUtil.createDefaultDialog(this, "我是标题", "你好,我们将在30分钟处理，稍后通知您订单结果！",
+        DialogUtil.createDefaultDialog(this, Html.fromHtml("<font color='#EFAE3C'>" + "我是标题" + "</font>"),
+                Html.fromHtml("你好,我们将在" + "<font color='#EE4000'>" + "30" + "</font>" + "分钟处理，稍后通知您订单结果！"),
                 "", new IDialog.OnClickListener() {
                     @Override
                     public void onClick(IDialog dialog) {
@@ -67,8 +69,8 @@ public class CommonDialogActivity extends BaseActivity {
      */
     public void showDefaultDialogTwo(View view) {
 
-        DialogUtil.createDefaultDialog(this, "分享", "分享此接单码，您和乘客都将获得现金红包！",
-                "立即分享", new IDialog.OnClickListener() {
+        DialogUtil.createDefaultDialog(this, Html.fromHtml("<font color='#9932CC'>" + "分享" + "</font>"), "分享此接单码，您和乘客都将获得现金红包！",
+                Html.fromHtml("<font color='#0000CD'>" + "立即分享" + "</font>"), new IDialog.OnClickListener() {
                     @Override
                     public void onClick(IDialog dialog) {
                         Toast.makeText(MyApplication.getApplication(), "立即分享", Toast.LENGTH_SHORT).show();

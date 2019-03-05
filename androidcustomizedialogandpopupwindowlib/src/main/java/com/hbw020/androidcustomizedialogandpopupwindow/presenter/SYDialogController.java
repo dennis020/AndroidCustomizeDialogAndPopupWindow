@@ -26,10 +26,10 @@ public class SYDialogController {
     private IDialog.OnClickListener mPositiveButtonListener;
     private IDialog.OnClickListener mNegativeButtonListener;
     private WeakReference<IDialog> mDialog;
-    private String titleStr;//默认标题
-    private String contentStr;//默认内容
-    private String positiveStr;//右边按钮文字
-    private String negativeStr;//左边按钮文字
+    private CharSequence titleStr;//默认标题
+    private CharSequence contentStr;//默认内容
+    private CharSequence positiveStr;//右边按钮文字
+    private CharSequence negativeStr;//左边按钮文字
     private boolean showBtnLeft, showBtnRight;
 
 
@@ -89,8 +89,8 @@ public class SYDialogController {
                 contentStr, showBtnLeft, negativeStr, showBtnRight, positiveStr);
     }
 
-    void dealDefaultDialog(IDialog.OnClickListener positiveBtnListener, IDialog.OnClickListener negativeBtnListener, String titleStr, String contentStr,
-                           boolean showBtnLeft, String negativeStr, boolean showBtnRight, String positiveStr) {
+    void dealDefaultDialog(IDialog.OnClickListener positiveBtnListener, IDialog.OnClickListener negativeBtnListener, CharSequence titleStr, CharSequence contentStr,
+                           boolean showBtnLeft, CharSequence negativeStr, boolean showBtnRight, CharSequence positiveStr) {
         if (dialogView == null) return;
         this.mNegativeButtonListener = negativeBtnListener;
         this.mPositiveButtonListener = positiveBtnListener;
@@ -149,10 +149,10 @@ public class SYDialogController {
         Context context;
         IDialog.OnClickListener positiveBtnListener;
         IDialog.OnClickListener negativeBtnListener;
-        String titleStr;//默认标题
-        String contentStr;//默认内容
-        String positiveStr;//右边按钮文字
-        String negativeStr;//左边按钮文字
+        CharSequence titleStr;//默认标题
+        CharSequence contentStr;//默认内容
+        CharSequence positiveStr;//右边按钮文字
+        CharSequence negativeStr;//左边按钮文字
         boolean showBtnLeft, showBtnRight;
         int animRes;//Dialog动画style
 

@@ -19,7 +19,7 @@ public class DialogUtil {
      * @param btn1Str               button文字
      * @param positiveClickListener 点击事件
      */
-    public static void createDefaultDialog(Context context, String title, String content, String btn1Str, IDialog.OnClickListener positiveClickListener) {
+    public static void createDefaultDialog(Context context, CharSequence title, CharSequence content, CharSequence btn1Str, IDialog.OnClickListener positiveClickListener) {
         createDefaultDialog(context, title, content, btn1Str, positiveClickListener, "", null);
     }
 
@@ -32,8 +32,8 @@ public class DialogUtil {
      * @param btn2Str               右边按钮
      * @param positiveClickListener 右边点击事件
      */
-    public static void createDefaultDialog(Context context, String title, String content, String btn1Str,
-                                           IDialog.OnClickListener positiveClickListener, String btn2Str, IDialog.OnClickListener negativeClickListener) {
+    public static void createDefaultDialog(Context context, CharSequence title, CharSequence content, CharSequence btn1Str,
+                                           IDialog.OnClickListener positiveClickListener, CharSequence btn2Str, IDialog.OnClickListener negativeClickListener) {
         SYDialog.Builder builder = new SYDialog.Builder(context);
         if (!TextUtils.isEmpty(title)) {
             builder.setTitle(title);

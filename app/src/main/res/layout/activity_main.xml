@@ -13,19 +13,19 @@
         android:id="@+id/tv_popup"
         style="@style/btn_style_done"
         android:layout_marginTop="100dp"
-        android:text="CommonPopupWindow" />
+        android:text="PopupWindow" />
 
     <TextView
         android:id="@+id/tv_floating_window"
         style="@style/btn_style_done"
         android:layout_below="@+id/tv_popup"
         android:layout_marginTop="30dp"
-        android:text="FloatingWindow" />
+        android:text="悬浮窗" />
 
     <TextView
         android:id="@+id/tv_dialog"
         style="@style/btn_style_done"
         android:layout_below="@+id/tv_floating_window"
         android:layout_marginTop="30dp"
-        android:text="CommonDialog" />
+        android:text="Dialog" />
 </RelativeLayout>
