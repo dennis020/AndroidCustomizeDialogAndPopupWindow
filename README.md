@@ -31,5 +31,5 @@ allprojects {
 
 Step 2. Add the dependency：
 dependencies {
-	        implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.0'
+	        implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.1-beta'
 	}
