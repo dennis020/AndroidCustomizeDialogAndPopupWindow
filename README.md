@@ -1,5 +1,5 @@
 # AndroidCustomizeDialogAndPopupWindow
-Android dialog和PopupWindow弹框工具（支持默认，自定义扩展，重复弹出）
+Android dialog和PopupWindow弹框工具（支持全局默认，自定义扩展，依次重复弹出，动画）
 
 
 
@@ -31,5 +31,5 @@ allprojects {
 
 Step 2. Add the dependency：
 dependencies {
-	        implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.1-beta'
+	        implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.2-beta'
 	}
