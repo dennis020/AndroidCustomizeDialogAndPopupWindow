@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.hbw020.androidcustomizedialogandpopupwindow.demo"
-        minSdkVersion 26
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -27,5 +27,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 //    implementation project(':androidcustomizedialogandpopupwindowlib')
-    implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.1-beta'
+    implementation 'com.github.dennis020:AndroidCustomizeDialogAndPopupWindow:V1.2-beta'
 }
